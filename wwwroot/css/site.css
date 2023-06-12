@@ -1,0 +1,95 @@
+table {
+    
+  width: 60%;
+  background-color: white;
+  
+}
+
+table, th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+th {
+  background-color: gray;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  
+  html {
+      font-size: 10px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* body {
+  margin-bottom: 100px;
+  background-color: lightcyan;
+  width: 100%;
+
+} */
+
+
+
+button:hover {
+  background-color: #23527c; 
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+
+h3 {
+  margin-bottom: 20px;
+  background-color: black;
+  color: cornsilk;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+}
+
+
+p{
+  margin-bottom: 10px;
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body{
+  background-image: url("Calculation-and-Repeatable-Sections_blog-header.jpg");
+
+}
+
+
+/* Form container */
+
+.container {
+
+  width: 1500px;
+
+  padding: 22px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  } 
+
+  

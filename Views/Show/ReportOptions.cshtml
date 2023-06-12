@@ -1,0 +1,61 @@
+@model List<PenaltyCal_7.Models.Transaction>
+@{
+    ViewData["Title"] = "Report Options";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <style>
+        h1 {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        button {
+            font-size: 12px;
+            font-weight: 700;
+            background-color: lightgreen;
+            cursor: pointer;
+            padding: 8px 16px;
+            margin: top 30px; ;
+        }
+
+        .button-space {
+            margin-bottom: 20px;
+        }
+
+        .button-description {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Report Options</h1>
+
+    <div style="display: flex; justify-content: space-between;">
+        <form method="post" action="/Show/DailyPenaltyReport">
+            <p>1. Click on the "Daily Penalty Report by Party" button to generate the daily penalty report.</p>
+            <button type="submit">Daily Penalty Report by Party</button>
+        </form>
+
+        <form method="post" action="/Show/MonthlyPenaltyReport">
+            <p>2. Click on the "Monthly Penalty Report by Party" button to generate the monthly penalty report.</p>
+            <button type="submit">Monthly Penalty Report by Party</button>
+        </form>
+    </div>
+</body>
+</html>

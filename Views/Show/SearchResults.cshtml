@@ -1,0 +1,113 @@
+
+@model List<PenaltyCal_7.Models.HolidayCalender>
+
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <style>
+        h2 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+
+    @if (ViewData["Holidays"] != null && ViewData["Holidays"] is List<HolidayCalender> holidays && holidays.Count > 0)
+    {
+        <h2>Holidays</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Holiday ID</th>
+                    <th>Country</th>
+                    <th>Holiday Date</th>
+                    <th>Last Updated Date</th>
+                    <th>Description</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var holiday in holidays)
+                {
+                    <tr>
+                        <td>@holiday.HolidayId</td>
+                        <td>@holiday.Country</td>
+                        <td>@holiday.HolidayDate</td>
+                        <td>@holiday.LastUpdatedDate</td>
+                        <td>@holiday.Description</td>
+                        <td>@holiday.Year</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    @if (ViewData["Securities"] != null && ViewData["Securities"] is List<SecurityPrice> securities && securities.Count > 0)
+    {
+        <h2>Securities</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Price ID</th>
+                    <th>POH</th>
+                    <th>ISIN SEC ID</th>
+                    <th>Sec Price</th>
+                    <th>Valid From Date</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var security in securities)
+                {
+                    <tr>
+                        <td>@security.PriceId</td>
+                        <td>@security.Poh</td>
+                        <td>@(string.Join(", ", security.IsinSecId))</td>
+                        <td>@security.SecPrice</td>
+                        <td>@security.ValidFromDate</td>
+                        
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    @if (ViewData["PenaltyRates"] != null && ViewData["PenaltyRates"] is List<SecurityPenaltyRate> penaltyRates && penaltyRates.Count > 0)
+    {
+        <h2>Penalty Rates</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Penalty ID</th>
+                    <th>Penalty Rate</th>
+                    <th>Valid From Date</th>
+                    <th>Last Updated Date</th>
+                    <th>Approve Penalty Required</th>
+                    <th>Approval</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var penaltyRate in penaltyRates)
+                {
+                    <tr>
+                        <td>@penaltyRate.PenaltyId</td>
+                        <td>@penaltyRate.PenaltyRate</td>
+                        <td>@penaltyRate.ValidFromDate</td>
+                        <td>@penaltyRate.LastUpdatedDate</td>
+                        <td>@penaltyRate.ApprovePenaltyRequired</td>
+                        <td>@penaltyRate.Approval</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</body>
+</html>

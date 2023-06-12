@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PenaltyCal_7
+build_property.RootNamespace = PenaltyCal_7
+build_property.ProjectDir = c:\Users\udeole\Downloads\PenaltyCal_7\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\udeole\Downloads\PenaltyCal_7
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Registration/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXFNpZ25VcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/AllPenalties.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xBbGxQZW5hbHRpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/Holidays.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xIb2xpZGF5cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/Penalty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xQZW5hbHR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/PenaltyOptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xQZW5hbHR5T3B0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/PenaltyRates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xQZW5hbHR5UmF0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/ReferenceData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xSZWZlcmVuY2VEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/ReportOptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xSZXBvcnRPcHRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/SearchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xTZWFyY2hSZXN1bHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Show/Securities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd1xTZWN1cml0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/udeole/Downloads/PenaltyCal_7/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ho2mi94uyl

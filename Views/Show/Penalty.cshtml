@@ -1,0 +1,100 @@
+@model List<PenaltyCal_7.Models.Transaction>
+
+
+@{
+    ViewData["Title"] = "Penalty";
+}
+<table>
+    <thead>
+        <tr>
+            <th>Transaction Id</th>                     
+            <th>Place of Holding Tech Number</th>
+            <th>ISIN</th>
+            <th>Security Quantity</th>
+            <th>Transaction Type Code</th>
+            <th>Instruction Type Code</th>      
+            <th>Matching Reference</th>
+            <th>Settlement Date</th>
+            <th>Settlement Cash Amount</th>
+            <th>Calendar Id</th>
+            <th>Party Id</th>
+            <th>CounterParty Id</th>
+            <th>Party Role Code</th>
+            <th>CounterParty Role Code</th>
+            <th>Failing Party Role Code</th>
+            <th>Penalty Amount</th>
+            <th>Sign</th>
+            <th>Control Timestamp</th>
+            <th>Control User ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in Model)
+        {
+            <tr>
+                <td>@transaction.TransactionId</td>
+                <td>@transaction.PlaceOfHoldingTechNumber</td>
+                <td>@transaction.Isin</td>
+                <td>@transaction.SecurityQuantity</td>
+                <td>@transaction.TransactionTypeCode</td>
+                <td>@transaction.InstructionTypeCode</td>
+                <td>@transaction.MatchingReference</td>
+                <td>@transaction.SettlementDate</td>
+                <td>@transaction.SettlementCashAmount</td>
+                <td>@transaction.CalendarId</td>
+                <td>@transaction.PartyId</td>
+                <td>@transaction.CounterPartyId</td>
+                <td>@transaction.PartyRoleCd</td>
+                <td>@transaction.CounterPartyRoleCd</td>
+                <td>@transaction.FailingPartyRoleCd</td>
+                <td>@transaction.PenaltyAmount</td>
+                <td>@transaction.Sign</td>
+                <td>@transaction.CntlTimestamp</td>
+                <td>@transaction.CntlUserid</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                             
