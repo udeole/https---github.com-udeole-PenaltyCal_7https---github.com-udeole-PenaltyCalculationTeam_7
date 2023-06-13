@@ -9,6 +9,7 @@ public class HomeController : Controller
     PenaltyCalContext db = new PenaltyCalContext();
 
     // GET: Account/Login
+    [HttpGet]
 public ActionResult Index()
 
     {

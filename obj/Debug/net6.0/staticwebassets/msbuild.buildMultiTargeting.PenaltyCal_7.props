@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PenaltyCal_7.props" />
+</Project>
