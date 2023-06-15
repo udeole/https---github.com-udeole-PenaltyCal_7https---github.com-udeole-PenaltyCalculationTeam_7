@@ -1,0 +1,43 @@
+CREATE TABLE IF NOT EXISTS Security_Price
+(
+    Price_id bigint NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    POH smallint,
+    ISIN_SEC_ID char(12) COLLATE pg_catalog."default",
+    Valid_from_date date,
+    Sec_price numeric,
+    cntl_timestamp timestamp with time zone NOT NULL,
+    cntl_userid char(15) COLLATE pg_catalog."default" NOT NULL
+);
+INSERT INTO Security_Price (
+    POH,
+    ISIN_SEC_ID,
+    Valid_from_date,
+    Sec_price,
+    cntl_timestamp,
+    cntl_userid
+) VALUES
+(
+    1,
+    'ISIN123456789',
+    '2023-06-14',
+    10.99,
+    current_timestamp,
+    'USER1234567890'
+),
+(
+    2,
+    'ISIN987654321',
+    '2023-06-15',
+    20.50,
+    current_timestamp,
+    'USER2345678901'
+),
+(
+    3,
+    'ISIN567890123',
+    '2023-06-16',
+    15.75,
+    current_timestamp,
+    'USER3456789012'
+);
+

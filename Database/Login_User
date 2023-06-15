@@ -1,0 +1,20 @@
+Create table Login_User(
+	Login_Id int not null primary key,
+    user_id VARCHAR(10) NOT NULL,
+    password VARCHAR(10) NOT NULL,
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    telephone_number CHAR(10),
+    cntl_timestamp timestamp,
+    cntl_userid CHAR(10),
+	Role_Id int not null ,
+	FOREIGN KEY (Role_Id) REFERENCES UserRole(Role_Id)
+    );
+
+
+
+    INSERT INTO Login_User(user_id, password, first_name, last_name, telephone_number, cntl_timestamp, cntl_userid,Role_Id)
+    VALUES('arasks', 'abc23', 'Marie', 'Peter', '9130932884', '2000-06-05 11:23:47', 'a',1),
+          ('pratgs', 'xy8#ab', 'John', 'Bruce', '8888554132', '2003-04-09 10:44:55', 'b',2),
+          ('utska', 'pqr65#99', 'David', 'Sharma', '9890087376', '2008-08-22 06:17:27', 'c',1),
+          ('valde', 'aras3699', 'Marie', 'Das', '9657720073', '2011-11-13 08:32:12', 'd',2);

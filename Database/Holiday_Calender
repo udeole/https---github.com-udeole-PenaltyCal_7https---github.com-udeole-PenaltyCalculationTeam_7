@@ -1,0 +1,123 @@
+--create country table and enter data first before running this
+CREATE TABLE Holiday_Calender(
+	holiday_id int not null Primary Key GENERATED ALWAYS AS IDENTITY ,
+	country_id char(10) not null,
+	holiday_date Date not null,
+	last_updated_date Date not null,
+	description char(30) not null,
+	year int not null,
+	cntl_userid char(20) not null,
+	FOREIGN KEY (Country_id) REFERENCES Country(Country_id)
+);
+
+
+
+
+
+
+
+
+
+
+-- USA
+INSERT INTO holiday_calender (holiday_id, country_id, holiday_date, last_updated_date, description, year, cntl_userid)
+VALUES (DEFAULT, 'USA', '2023-01-01', '2023-06-07', 'New Years Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-01-16', '2023-06-07', 'Martin Luther King Jr. Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-02-20', '2023-06-07', 'Presidents Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-05-29', '2023-06-07', 'Memorial Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-07-04', '2023-06-07', 'Independence Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-09-04', '2023-06-07', 'Labor Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-10-09', '2023-06-07', 'Columbus Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-11-11', '2023-06-07', 'Veterans Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-11-23', '2023-06-07', 'Thanksgiving Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2023-12-25', '2023-06-07', 'Christmas Day', 2023, 'paresh'),
+       (DEFAULT, 'USA', '2024-01-01', '2023-06-07', 'New Years Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-01-15', '2023-06-07', 'Martin Luther King Jr. Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-02-19', '2023-06-07', 'Presidents Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-05-27', '2023-06-07', 'Memorial Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-07-04', '2023-06-07', 'Independence Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-09-02', '2023-06-07', 'Labor Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-10-14', '2023-06-07', 'Columbus Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-11-11', '2023-06-07', 'Veterans Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-11-28', '2023-06-07', 'Thanksgiving Day', 2024, 'paresh'),
+       (DEFAULT, 'USA', '2024-12-25', '2023-06-07', 'Christmas Day', 2024, 'paresh');
+
+-- UK
+INSERT INTO holiday_calender (holiday_id, country_id, holiday_date, last_updated_date, description, year, cntl_userid)
+VALUES (DEFAULT, 'UK', '2023-01-01', '2023-06-07', 'New Years Day', 2023, 'paresh'),
+       (DEFAULT, 'UK', '2023-04-14', '2023-06-07', 'Good Friday', 2023, 'paresh'),
+       (DEFAULT, 'UK', '2023-04-17', '2023-06-07', 'Easter Monday', 2023, 'paresh'),
+       (DEFAULT, 'UK', '2023-05-01', '2023-06-07', 'Early May Bank Holiday', 2023, 'paresh'),
+       (DEFAULT, 'UK', '2023-05-29', '2023-06-07', 'Spring Bank Holiday', 2023, 'paresh'),
+       (DEFAULT, 'UK', '2023-08-28', '2023-06-07', 'Summer Bank Holiday', 2023, 'paresh'),
+       (DEFAULT, 'UK', '2023-12-25', '2023-06-07', 'Christmas Day', 2023, 'paresh'),
+       (DEFAULT, 'UK', '2023-12-26', '2023-06-07', 'Boxing Day', 2023, 'paresh'),
+       (DEFAULT, 'UK', '2024-01-01', '2023-06-07', 'New Years Day', 2024, 'paresh'),
+       (DEFAULT, 'UK', '2024-03-29', '2023-06-07', 'Good Friday', 2024, 'paresh'),
+       (DEFAULT, 'UK', '2024-04-01', '2023-06-07', 'Easter Monday', 2024, 'paresh'),
+       (DEFAULT, 'UK', '2024-05-06', '2023-06-07', 'Early May Bank Holiday', 2024, 'paresh'),
+       (DEFAULT, 'UK', '2024-05-27', '2023-06-07', 'Spring Bank Holiday', 2024, 'paresh'),
+       (DEFAULT, 'UK', '2024-08-26', '2023-06-07', 'Summer Bank Holiday', 2024, 'paresh'),
+       (DEFAULT, 'UK', '2024-12-25', '2023-06-07', 'Christmas Day', 2024, 'paresh'),
+       (DEFAULT, 'UK', '2024-12-26', '2023-06-07', 'Boxing Day', 2024, 'paresh');
+
+-- India
+INSERT INTO holiday_calender (holiday_id, country_id, holiday_date, last_updated_date, description, year, cntl_userid)
+VALUES
+    (DEFAULT, 'IND', '2023-01-26', '2023-06-07', 'Republic Day', 2023, 'paresh'),
+    (DEFAULT, 'IND', '2023-03-28', '2023-06-07', 'Holi', 2023, 'paresh'),
+    (DEFAULT, 'IND', '2023-04-14', '2023-06-07', 'Good Friday', 2023, 'paresh'),
+    (DEFAULT, 'IND', '2023-08-15', '2023-06-07', 'Independence Day', 2023, 'paresh'),
+    (DEFAULT, 'IND', '2023-09-10', '2023-06-07', 'Ganesh Chaturthi', 2023, 'paresh'),
+    (DEFAULT, 'IND', '2023-10-02', '2023-06-07', 'Gandhi Jayanti', 2023, 'paresh'),
+    (DEFAULT, 'IND', '2023-10-08', '2023-06-07', 'Dussehra', 2023, 'paresh'),
+    (DEFAULT, 'IND', '2023-12-25', '2023-06-07', 'Christmas Day', 2023, 'paresh'),
+    (DEFAULT, 'IND', '2024-01-26', '2023-06-07', 'Republic Day', 2024, 'paresh'),
+    (DEFAULT, 'IND', '2024-03-17', '2023-06-07', 'Holi', 2024, 'paresh'),
+    (DEFAULT, 'IND', '2024-04-05', '2023-06-07', 'Good Friday', 2024, 'paresh'),
+    (DEFAULT, 'IND', '2024-08-15', '2023-06-07', 'Independence Day', 2024, 'paresh'),
+    (DEFAULT, 'IND', '2024-08-31', '2023-06-07', 'Onam', 2024, 'paresh'),
+    (DEFAULT, 'IND', '2024-10-02', '2023-06-07', 'Gandhi Jayanti', 2024, 'paresh'),
+    (DEFAULT, 'IND', '2024-10-13', '2023-06-07', 'Dussehra', 2024, 'paresh'),
+    (DEFAULT, 'IND', '2024-12-25', '2023-06-07', 'Christmas Day', 2024, 'paresh');
+
+-- New Zealand
+INSERT INTO holiday_calender (holiday_id, country_id, holiday_date, last_updated_date, description, year, cntl_userid)
+VALUES (DEFAULT, 'NZ', '2023-01-01', '2023-06-07', 'New Years Day', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2023-01-02', '2023-06-07', 'Day after New Years Day', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2023-02-06', '2023-06-07', 'Waitangi Day', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2023-04-14', '2023-06-07', 'Good Friday', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2023-04-17', '2023-06-07', 'Easter Monday', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2023-06-05', '2023-06-07', 'Queens Birthday', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2023-10-23', '2023-06-07', 'Labour Day', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2023-12-25', '2023-06-07', 'Christmas Day', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2023-12-26', '2023-06-07', 'Boxing Day', 2023, 'paresh'),
+       (DEFAULT, 'NZ', '2024-01-01', '2023-06-07', 'New Years Day', 2024, 'paresh'),
+       (DEFAULT, 'NZ', '2024-01-02', '2023-06-07', 'Day after New Years Day', 2024, 'paresh'),
+       (DEFAULT, 'NZ', '2024-02-06', '2023-06-07', 'Waitangi Day', 2024, 'paresh'),
+       (DEFAULT, 'NZ', '2024-03-29', '2023-06-07', 'Good Friday', 2024, 'paresh'),
+       (DEFAULT, 'NZ', '2024-04-01', '2023-06-07', 'Easter Monday', 2024, 'paresh'),
+       (DEFAULT, 'NZ', '2024-06-03', '2023-06-07', 'Queens Birthday', 2024, 'paresh'),
+       (DEFAULT, 'NZ', '2024-10-28', '2023-06-07', 'Labour Day', 2024, 'paresh'),
+       (DEFAULT, 'NZ', '2024-12-25', '2023-06-07', 'Christmas Day', 2024, 'paresh'),
+       (DEFAULT, 'NZ', '2024-12-26', '2023-06-07', 'Boxing Day', 2024, 'paresh');
+
+-- Australia
+INSERT INTO holiday_calender (holiday_id, country_id, holiday_date, last_updated_date, description, year, cntl_userid)
+VALUES (DEFAULT, 'AUS', '2023-01-01', '2023-06-07', 'New Years Day', 2023, 'paresh'),
+       (DEFAULT, 'AUS', '2023-01-02', '2023-06-07', 'New Years Day (Observed)', 2023, 'paresh'),
+       (DEFAULT, 'AUS', '2023-01-26', '2023-06-07', 'Australia Day', 2023, 'paresh'),
+       (DEFAULT, 'AUS', '2023-04-14', '2023-06-07', 'Good Friday', 2023, 'paresh'),
+       (DEFAULT, 'AUS', '2023-04-17', '2023-06-07', 'Easter Monday', 2023, 'paresh'),
+       (DEFAULT, 'AUS', '2023-04-25', '2023-06-07', 'Anzac Day', 2023, 'paresh'),
+       (DEFAULT, 'AUS', '2023-12-25', '2023-06-07', 'Christmas Day', 2023, 'paresh'),
+       (DEFAULT, 'AUS', '2023-12-26', '2023-06-07', 'Boxing Day', 2023, 'paresh'),
+       (DEFAULT, 'AUS', '2024-01-01', '2023-06-07', 'New Years Day', 2024, 'paresh'),
+       (DEFAULT, 'AUS', '2024-01-02', '2023-06-07', 'New Years Day (Observed)', 2024, 'paresh'),
+       (DEFAULT, 'AUS', '2024-01-26', '2023-06-07', 'Australia Day', 2024, 'paresh'),
+       (DEFAULT, 'AUS', '2024-04-05', '2023-06-07', 'Good Friday', 2024, 'paresh'),
+       (DEFAULT, 'AUS', '2024-04-08', '2023-06-07', 'Easter Monday', 2024, 'paresh'),
+       (DEFAULT, 'AUS', '2024-04-25', '2023-06-07', 'Anzac Day', 2024, 'paresh'),
+       (DEFAULT, 'AUS', '2024-12-25', '2023-06-07', 'Christmas Day', 2024, 'paresh'),
+       (DEFAULT, 'AUS', '2024-12-26', '2023-06-07', 'Boxing Day', 2024, 'paresh');
+

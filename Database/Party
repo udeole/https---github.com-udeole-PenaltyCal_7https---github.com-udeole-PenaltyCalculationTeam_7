@@ -1,0 +1,30 @@
+CREATE TABLE PARTY(
+party_id char(16)not null Primary Key,
+party_name char(20) not null,
+cntl_user_Id char(20),
+cntl_timestamp TIMESTAMP );
+
+INSERT INTO PARTY (
+    party_id,
+    party_name,
+    cntl_user_Id,
+    cntl_timestamp
+) VALUES
+(
+    'PARTY1234567890',
+    'Party 1',
+    'USER1234567890',
+    current_timestamp
+),
+(
+    'PARTY2345678901',
+    'Party 2',
+    'USER2345678901',
+    current_timestamp
+),
+(
+    'PARTY3456789012',
+    'Party 3',
+    'USER3456789012',
+    current_timestamp
+);

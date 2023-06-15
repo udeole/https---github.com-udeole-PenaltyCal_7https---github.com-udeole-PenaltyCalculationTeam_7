@@ -1,0 +1,12 @@
+CREATE TABLE country(
+	   country_id (10),
+	   country_name(30),
+	   cntl_userid char(20),
+	   cntl_timestamp TIMESTAMP);
+
+INSERT INTO COUNTRY
+VALUES('USA','United States of America','paresh',CURRENT_TIMESTAMP),
+	('AUS','Australia','paresh',CURRENT_TIMESTAMP),
+	('NZ','New Zealand','paresh',CURRENT_TIMESTAMP),
+	('IND','India','paresh',CURRENT_TIMESTAMP),
+	('UK','United Kingdom','paresh',CURRENT_TIMESTAMP);

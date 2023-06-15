@@ -1,0 +1,50 @@
+CREATE TABLE IF NOT EXISTS security_penalty_rate
+(
+    Penalty_id bigint NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Valid_From_Date date,
+    Penalty_Rate numeric,
+    Last_Updated_Date date,
+    cntl_timestamp timestamp with time zone NOT NULL,
+    cntl_userid char(15) COLLATE pg_catalog."default" NOT NULL,
+    approve_penalty_required numeric NOT NULL DEFAULT 250,
+    approval char(20) COLLATE pg_catalog."default" NOT NULL DEFAULT 'approved'
+);
+
+
+
+INSERT INTO security_penalty_rate (
+    Valid_From_Date,
+    Penalty_Rate,
+    Last_Updated_Date,
+    cntl_timestamp,
+    cntl_userid,
+    approve_penalty_required,
+    approval
+) VALUES 
+(
+    '2023-06-14',
+    0.05,
+    '2023-06-14',
+    current_timestamp,
+    'USER1234567890',
+    250,
+    'approved'
+),
+(
+    '2023-06-15',
+    0.03,
+    '2023-06-15',
+    current_timestamp,
+    'USER2345678901',
+    200,
+    'approved'
+),
+(
+    '2023-06-16',
+    0.08,
+    '2023-06-16',
+    current_timestamp,
+    'USER3456789012',
+    300,
+    'approved'
+);

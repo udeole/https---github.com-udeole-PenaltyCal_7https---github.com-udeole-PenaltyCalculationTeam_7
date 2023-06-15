@@ -1,0 +1,9 @@
+CREATE TABLE UserROLE(
+	Role_Id int not null PRIMARY KEY,
+	Role_Name char(20),
+	cntl_timestamp TIMESTAMP,
+	cntl_user_id char(20)
+	);
+INSERT INTO UserRole
+VALUES(1,'User',CURRENT_TIMESTAMP,'aman'),
+	(2,'Admin',CURRENT_TIMESTAMP,'paresh');
