@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\udeole\\Downloads\\PenaltyCal_7\\PenaltyCal_7.csproj": {}
+    "c:\\Users\\udeole\\Downloads\\https---github.com-udeole-PenaltyCal_7https---github.com-udeole-PenaltyCalculationTeam_7\\PenaltyCal_7.csproj": {}
   },
   "projects": {
-    "c:\\Users\\udeole\\Downloads\\PenaltyCal_7\\PenaltyCal_7.csproj": {
+    "c:\\Users\\udeole\\Downloads\\https---github.com-udeole-PenaltyCal_7https---github.com-udeole-PenaltyCalculationTeam_7\\PenaltyCal_7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\udeole\\Downloads\\PenaltyCal_7\\PenaltyCal_7.csproj",
+        "projectUniqueName": "c:\\Users\\udeole\\Downloads\\https---github.com-udeole-PenaltyCal_7https---github.com-udeole-PenaltyCalculationTeam_7\\PenaltyCal_7.csproj",
         "projectName": "PenaltyCal_7",
-        "projectPath": "c:\\Users\\udeole\\Downloads\\PenaltyCal_7\\PenaltyCal_7.csproj",
+        "projectPath": "c:\\Users\\udeole\\Downloads\\https---github.com-udeole-PenaltyCal_7https---github.com-udeole-PenaltyCalculationTeam_7\\PenaltyCal_7.csproj",
         "packagesPath": "C:\\Users\\udeole\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\udeole\\Downloads\\PenaltyCal_7\\obj\\",
+        "outputPath": "c:\\Users\\udeole\\Downloads\\https---github.com-udeole-PenaltyCal_7https---github.com-udeole-PenaltyCalculationTeam_7\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\udeole\\AppData\\Roaming\\NuGet\\NuGet.Config"
