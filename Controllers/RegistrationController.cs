@@ -58,7 +58,7 @@ namespace PenaltyCal_7.Controllers
         {
             _dbContext = dbContext;
         }
-[HttpGet]
+
         public IActionResult SignUp()
         {
             return View();
